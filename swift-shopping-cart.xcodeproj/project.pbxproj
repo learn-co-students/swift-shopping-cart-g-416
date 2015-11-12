@@ -13,6 +13,7 @@
 		4D1879DB1BF4DC3500233542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1879DA1BF4DC3500233542 /* Assets.xcassets */; };
 		4D1879DE1BF4DC3500233542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1879DC1BF4DC3500233542 /* LaunchScreen.storyboard */; };
 		4D1879E91BF4DC3600233542 /* swift_shopping_cartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1879E81BF4DC3600233542 /* swift_shopping_cartTests.swift */; };
+		966897B4BB6AC6070E76B15B /* Pods_swift_shopping_cartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E150885CD9D12CC9E7E8F63 /* Pods_swift_shopping_cartTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16AB310D8039013F2B39477B /* Pods-swift-shopping-cartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-shopping-cartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-shopping-cartTests/Pods-swift-shopping-cartTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C5DDBD9E451555DE0A5F98D /* Pods-swift-shopping-cartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-shopping-cartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-shopping-cartTests/Pods-swift-shopping-cartTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D1879D01BF4DC3500233542 /* swift-shopping-cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-shopping-cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1879D31BF4DC3500233542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1879D51BF4DC3500233542 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		4D1879E41BF4DC3600233542 /* swift-shopping-cartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-shopping-cartTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1879E81BF4DC3600233542 /* swift_shopping_cartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_shopping_cartTests.swift; sourceTree = "<group>"; };
 		4D1879EA1BF4DC3600233542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E150885CD9D12CC9E7E8F63 /* Pods_swift_shopping_cartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_shopping_cartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966897B4BB6AC6070E76B15B /* Pods_swift_shopping_cartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				4D1879D21BF4DC3500233542 /* swift-shopping-cart */,
 				4D1879E71BF4DC3600233542 /* swift-shopping-cartTests */,
 				4D1879D11BF4DC3500233542 /* Products */,
+				F6EBA63E30FEB236564091CB /* Pods */,
+				6D30563219AE4E170310BF22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +103,23 @@
 			path = "swift-shopping-cartTests";
 			sourceTree = "<group>";
 		};
+		6D30563219AE4E170310BF22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E150885CD9D12CC9E7E8F63 /* Pods_swift_shopping_cartTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6EBA63E30FEB236564091CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5DDBD9E451555DE0A5F98D /* Pods-swift-shopping-cartTests.debug.xcconfig */,
+				16AB310D8039013F2B39477B /* Pods-swift-shopping-cartTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D1879F01BF4DC3600233542 /* Build configuration list for PBXNativeTarget "swift-shopping-cartTests" */;
 			buildPhases = (
+				77D23B30D2F08E7DA1C9A1AD /* Check Pods Manifest.lock */,
 				4D1879E01BF4DC3600233542 /* Sources */,
 				4D1879E11BF4DC3600233542 /* Frameworks */,
 				4D1879E21BF4DC3600233542 /* Resources */,
+				32CBE04D4C19C282B0FEC358 /* Embed Pods Frameworks */,
+				3F58FFBEF36F03DE3C6E561C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32CBE04D4C19C282B0FEC358 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-shopping-cartTests/Pods-swift-shopping-cartTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F58FFBEF36F03DE3C6E561C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-shopping-cartTests/Pods-swift-shopping-cartTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D23B30D2F08E7DA1C9A1AD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D1879CC1BF4DC3500233542 /* Sources */ = {
@@ -345,6 +420,7 @@
 		};
 		4D1879F11BF4DC3600233542 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5DDBD9E451555DE0A5F98D /* Pods-swift-shopping-cartTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-shopping-cartTests/Info.plist";
@@ -357,6 +433,7 @@
 		};
 		4D1879F21BF4DC3600233542 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16AB310D8039013F2B39477B /* Pods-swift-shopping-cartTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-shopping-cartTests/Info.plist";
@@ -386,6 +463,7 @@
 				4D1879EF1BF4DC3600233542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D1879F01BF4DC3600233542 /* Build configuration list for PBXNativeTarget "swift-shopping-cartTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +472,7 @@
 				4D1879F21BF4DC3600233542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
