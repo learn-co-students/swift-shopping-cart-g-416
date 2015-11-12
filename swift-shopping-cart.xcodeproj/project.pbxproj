@@ -13,6 +13,10 @@
 		4D1879DB1BF4DC3500233542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1879DA1BF4DC3500233542 /* Assets.xcassets */; };
 		4D1879DE1BF4DC3500233542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1879DC1BF4DC3500233542 /* LaunchScreen.storyboard */; };
 		4D1879E91BF4DC3600233542 /* swift_shopping_cartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1879E81BF4DC3600233542 /* swift_shopping_cartTests.swift */; };
+		4D1879F91BF4E0C300233542 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1879F81BF4E0C300233542 /* Item.swift */; };
+		4D1879FB1BF4E0D100233542 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1879FA1BF4E0D100233542 /* Cart.swift */; };
+		4D187A011BF5200100233542 /* ItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D187A001BF5200100233542 /* ItemSpec.swift */; };
+		4D187A031BF529FD00233542 /* CartSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D187A021BF529FD00233542 /* CartSpec.swift */; };
 		966897B4BB6AC6070E76B15B /* Pods_swift_shopping_cartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E150885CD9D12CC9E7E8F63 /* Pods_swift_shopping_cartTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		4D1879E41BF4DC3600233542 /* swift-shopping-cartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-shopping-cartTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1879E81BF4DC3600233542 /* swift_shopping_cartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_shopping_cartTests.swift; sourceTree = "<group>"; };
 		4D1879EA1BF4DC3600233542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1879F81BF4E0C300233542 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4D1879FA1BF4E0D100233542 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		4D187A001BF5200100233542 /* ItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSpec.swift; sourceTree = "<group>"; };
+		4D187A021BF529FD00233542 /* CartSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartSpec.swift; sourceTree = "<group>"; };
 		6E150885CD9D12CC9E7E8F63 /* Pods_swift_shopping_cartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_shopping_cartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				4D1879D31BF4DC3500233542 /* AppDelegate.swift */,
+				4D1879FA1BF4E0D100233542 /* Cart.swift */,
+				4D1879F81BF4E0C300233542 /* Item.swift */,
 				4D1879F31BF4DF8200233542 /* Resources */,
 			);
 			path = "swift-shopping-cart";
@@ -93,6 +103,8 @@
 		4D1879E71BF4DC3600233542 /* swift-shopping-cartTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D187A021BF529FD00233542 /* CartSpec.swift */,
+				4D187A001BF5200100233542 /* ItemSpec.swift */,
 				4D1879E81BF4DC3600233542 /* swift_shopping_cartTests.swift */,
 				4D1879EA1BF4DC3600233542 /* Info.plist */,
 			);
@@ -281,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D1879D61BF4DC3500233542 /* ViewController.swift in Sources */,
+				4D1879F91BF4E0C300233542 /* Item.swift in Sources */,
 				4D1879D41BF4DC3500233542 /* AppDelegate.swift in Sources */,
+				4D1879FB1BF4E0D100233542 /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D1879E91BF4DC3600233542 /* swift_shopping_cartTests.swift in Sources */,
+				4D187A031BF529FD00233542 /* CartSpec.swift in Sources */,
+				4D187A011BF5200100233542 /* ItemSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
