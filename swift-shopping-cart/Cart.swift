@@ -24,15 +24,7 @@ class Cart {
             items.removeAtIndex(index)
         }
     }
-    
-    func removeAllItemsLikeItem(item: Item) {
-        for var i = 0; i < items.count; i++ {
-            if items[i] == item {
-                items.removeAtIndex(i)
-            }
-        }
-    }
-    
+        
     func allItemsWithName(name: String) -> [Item] {
         var matches = [Item]()
         

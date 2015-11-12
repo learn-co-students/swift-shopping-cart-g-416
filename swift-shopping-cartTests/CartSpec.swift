@@ -104,36 +104,6 @@ class CartSpec: QuickSpec {
                 }
             }
 
-            describe("removeAllItemsLikeItem(_:)") {
-                it("should remove a green apple from a fruit cart") {
-                    fruitCart.removeItem(🍏)
-                    let expected = [🍎, 🍊, 🍓]
-                    
-                    expect(fruitCart.items).to(equal(expected))
-                }
-                
-                it("should remove a pizza from a full cart") {
-                    fullCart.removeItem(🍕)
-                    let expected = [🌮, 🌯, 🍏, 🍎, 🍊, 🍓, 🧀, 🍪]
-                    
-                    expect(fullCart.items).to(equal(expected))
-                }
-                
-                it("should remove the first greent apples from an apple cart") {
-                    appleCart.removeItem(🍏)
-                    let expected = [🍎, 🍏2, 🍏]
-                    
-                    expect(appleCart.items).to(equal(expected))
-                }
-                
-                it("should remove the first pizza from a junk food cart") {
-                    junkFoodCart.removeItem(🍕)
-                    let expected = [🌮,🍕2, 🍕, 🌮, 🌯, 🍕, 🍕2, 🌯]
-                    
-                    expect(junkFoodCart.items).to(equal(expected))
-                }
-            }
-
             describe("allItemsWithName(_:)") {
                 it("should return an empty array when no matches are found cart") {
                     let result = emptyCart.allItemsWithName("🌯")
