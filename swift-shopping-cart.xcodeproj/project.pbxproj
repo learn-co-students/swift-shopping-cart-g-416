@@ -85,11 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				4D1879D31BF4DC3500233542 /* AppDelegate.swift */,
-				4D1879D51BF4DC3500233542 /* ViewController.swift */,
-				4D1879D71BF4DC3500233542 /* Main.storyboard */,
-				4D1879DA1BF4DC3500233542 /* Assets.xcassets */,
-				4D1879DC1BF4DC3500233542 /* LaunchScreen.storyboard */,
-				4D1879DF1BF4DC3500233542 /* Info.plist */,
+				4D1879F31BF4DF8200233542 /* Resources */,
 			);
 			path = "swift-shopping-cart";
 			sourceTree = "<group>";
@@ -101,6 +97,18 @@
 				4D1879EA1BF4DC3600233542 /* Info.plist */,
 			);
 			path = "swift-shopping-cartTests";
+			sourceTree = "<group>";
+		};
+		4D1879F31BF4DF8200233542 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D1879D51BF4DC3500233542 /* ViewController.swift */,
+				4D1879D71BF4DC3500233542 /* Main.storyboard */,
+				4D1879DA1BF4DC3500233542 /* Assets.xcassets */,
+				4D1879DC1BF4DC3500233542 /* LaunchScreen.storyboard */,
+				4D1879DF1BF4DC3500233542 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		6D30563219AE4E170310BF22 /* Frameworks */ = {
