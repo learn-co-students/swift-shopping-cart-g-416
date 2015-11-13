@@ -48,7 +48,7 @@ You'll notice that the `Item` class also conforms to the `Equatable` protocol, a
 
 A fun (though somewhat inefficient) feature of Swift is that it allows unicode characters to be used in instance names. The `CartSpec.swift` file makes use of the food emojis 🍕, 🌮, 🌯, 🍏, 🍎, 🍊, 🍓, 🧀, and 🍪 to name its instances.
 
-**Top-tip:** *Since these characters aren't on a standard keyboard, autocomplete can't be used with instances that begin with an emoji, so actually employing this feature relies on a lot of copy/paste gets annoying pretty fast. This feature is cute, but don't frustrate yourself in a serious application by naming your instances with emojis.*
+**Top-tip:** *Since these characters aren't on a standard keyboard, autocomplete can't be used with instances that begin with an emoji, so actually employing this feature relies on a lot of copy/paste that gets annoying pretty fast. This feature is cute, but don't frustrate yourself in a serious application by naming your instances with emojis.*
 
 ### `Cart.swift`
 
