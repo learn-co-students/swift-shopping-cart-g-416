@@ -63,3 +63,6 @@ You'll notice that the `Item` class also conforms to the `Equatable` protocol, a
 5. Write a method named `itemsWithMinimumPriceInCents(_:)` that takes one integer argument and returns an array of type `Item`. This method should collect all of the items in the `items` property array whose `priceInCents` property is greater than or equal to the submitted integer argument.
 
 6. Write a method named `itemsWithMaximumPriceInCents(_:)` that take one integer argument and return an array of type `Item`. The method should collect all of the items in the `items` property array whose `priceInCents` property is less than or equal to the submitted integer argument.
+
+<a href='https://learn.co/lessons/swift-shopping-cart' data-visibility='hidden'>View this lesson on Learn.co</a>
+
