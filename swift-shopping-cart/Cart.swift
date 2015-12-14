@@ -5,14 +5,14 @@ import Foundation
 class Cart {
     var items = [Item]()
     
-    func calculateTotalPriceInCents() -> Int {
-        var totalPriceInCents = 0
+    func totalPriceInCents() -> Int {
+        var total = 0
         
         for item in items {
-            totalPriceInCents += item.priceInCents
+            total += item.priceInCents
         }
         
-        return totalPriceInCents
+        return total
     }
     
     func addItem(item: Item) {
@@ -25,7 +25,7 @@ class Cart {
         }
     }
         
-    func allItemsWithName(name: String) -> [Item] {
+    func itemsWithName(name: String) -> [Item] {
         var matches = [Item]()
         
         for item in items {
@@ -37,7 +37,7 @@ class Cart {
         return matches
     }
     
-    func allItemsWithMinimumPriceInCents(priceInCents: Int) -> [Item] {
+    func itemsWithMinimumPriceInCents(priceInCents: Int) -> [Item] {
         var matches = [Item]()
         
         for item in items {
@@ -49,7 +49,7 @@ class Cart {
         return matches
     }
     
-    func allItemsWithMaximumPriceInCents(priceInCents: Int) -> [Item] {
+    func itemsWithMaximumPriceInCents(priceInCents: Int) -> [Item] {
         var matches = [Item]()
         
         for item in items {
