@@ -14,7 +14,7 @@ class Item: Equatable, CustomDebugStringConvertible {
 }
 
 
-@warn_unused_result func ==(lhs: Item, rhs: Item) -> Bool {
+func ==(lhs: Item, rhs: Item) -> Bool {
     let sameName = lhs.name == rhs.name
     let samePrice = lhs.priceInCents == rhs.priceInCents
     
