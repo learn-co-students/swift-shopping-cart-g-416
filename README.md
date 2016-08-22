@@ -1,5 +1,9 @@
 # Swift — Shopping Cart
 
+## Overview
+
+In this lab, you'll practice creating classes and properties as well as writing methods that use a custom type. 
+
 ## Objectives
 
 1. Create a class file.
