@@ -66,68 +66,68 @@ class CartSpec: QuickSpec {
                 }
             }
             
-            describe("addItem(_:)") {
+            describe("add(item:)") {
                 it("should add pizza to an empty cart") {
-                    emptyCart.addItem(🍕)
+                    emptyCart.add(item: 🍕)
                     
                     expect(emptyCart.items).to(equal([🍕]))
                 }
                 
                 it("should add another pizza to a full cart") {
-                    fullCart.addItem(🍕)
+                    fullCart.add(item: 🍕)
                     let expected = [🍕, 🌮, 🌯, 🍏, 🍎, 🍊, 🍓, 🧀, 🍪, 🍕]
                     
                     expect(fullCart.items).to(equal(expected))
                 }
                 
                 it("should add cheese to a fruit cart") {
-                    fruitCart.addItem(🧀)
+                    fruitCart.add(item: 🧀)
                     let expected = [🍏, 🍎, 🍊, 🍓, 🧀]
                     
                     expect(fruitCart.items).to(equal(expected))
                 }
             }
             
-            describe("removeItem(_:)") {
+            describe("remove(item:)") {
                 it("should remove burrito from a full cart") {
-                    fullCart.removeItem(🌯)
+                    fullCart.remove(item: 🌯)
                     let expected = [🍕, 🌮, 🍏, 🍎, 🍊, 🍓, 🧀, 🍪]
                     
                     expect(fullCart.items).to(equal(expected))
                 }
                 
                 it("should remove orange from a fruit cart") {
-                    fruitCart.removeItem(🍊)
+                    fruitCart.remove(item: 🍊)
                     let expected = [🍏, 🍎, 🍓]
                     
                     expect(fruitCart.items).to(equal(expected))
                 }
             }
 
-            describe("itemsWithName(_:)") {
+            describe("items(withName:)") {
                 it("should return an empty array when no matches are found cart") {
-                    let result = emptyCart.itemsWithName("🌯")
+                    let result = emptyCart.items(withName: "🌯")
                     let expected = [Item]()
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing cheese from a full cart") {
-                    let result = fullCart.itemsWithName("🧀")
+                    let result = fullCart.items(withName: "🧀")
                     let expected = [🧀]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containg all of the green apples from an apple cart") {
-                    let result = appleCart.itemsWithName("🍏")
+                    let result = appleCart.items(withName: "🍏")
                     let expected = [🍏, 🍏2, 🍏]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing all of the pizza from a junk food cart") {
-                    let result = junkFoodCart.itemsWithName("🍕")
+                    let result = junkFoodCart.items(withName: "🍕")
                     let expected = [🍕, 🍕2, 🍕, 🍕, 🍕2]
                     
                     expect(result).to(equal(expected))
@@ -136,28 +136,28 @@ class CartSpec: QuickSpec {
             
             describe("itemsWithMinimumPriceInCents(_:)") {
                 it("should return an array containing all of the full cart's items that have a priceInCents greater than or equal to 151") {
-                    let result = fullCart.itemsWithMinimumPriceInCents(151)
+                    let result = fullCart.items(withMinPrice: 151)
                     let expected = [🌮, 🌯, 🧀, 🍪]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing all of the full cart's items that have a priceInCents greater than or equal 150") {
-                    let result = fullCart.itemsWithMinimumPriceInCents(150)
+                    let result = fullCart.items(withMinPrice: 150)
                     let expected = [🍕, 🌮, 🌯, 🧀, 🍪]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing all of the full cart's items that have a priceInCents greater than or equal to 251") {
-                    let result = fullCart.itemsWithMinimumPriceInCents(251)
+                    let result = fullCart.items(withMinPrice: 251)
                     let expected = [🌯, 🧀]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing all of the full cart's items that have a priceInCents greater than or equal to 250") {
-                    let result = fullCart.itemsWithMinimumPriceInCents(250)
+                    let result = fullCart.items(withMinPrice: 250)
                     let expected = [🌮, 🌯, 🧀]
                     
                     expect(result).to(equal(expected))
@@ -166,28 +166,28 @@ class CartSpec: QuickSpec {
             
             describe("allItemsWithMaximumPriceInCents(_:)") {
                 it("should return an array containing all of the full cart's items that have a priceInCents less than or equal to 149") {
-                    let result = fullCart.itemsWithMaximumPriceInCents(149)
+                    let result = fullCart.items(withMaxPrice: 149)
                     let expected = [🍏, 🍎, 🍊, 🍓]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing all of the full cart's items that have a priceInCents less than or equal to 150") {
-                    let result = fullCart.itemsWithMaximumPriceInCents(150)
+                    let result = fullCart.items(withMaxPrice: 150)
                     let expected = [🍕, 🍏, 🍎, 🍊, 🍓]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing all of the full cart's items that have a priceInCents less than or equal to 249") {
-                    let result = fullCart.itemsWithMaximumPriceInCents(249)
+                    let result = fullCart.items(withMaxPrice: 249)
                     let expected = [🍕, 🍏, 🍎, 🍊, 🍓, 🍪]
                     
                     expect(result).to(equal(expected))
                 }
                 
                 it("should return an array containing all of the full cart's items that have a priceInCents less than or equal to 250") {
-                    let result = fullCart.itemsWithMaximumPriceInCents(250)
+                    let result = fullCart.items(withMaxPrice: 250)
                     let expected = [🍕, 🌮, 🍏, 🍎, 🍊, 🍓, 🍪]
                     
                     expect(result).to(equal(expected))
