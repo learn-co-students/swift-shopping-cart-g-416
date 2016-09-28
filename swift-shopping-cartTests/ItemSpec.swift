@@ -14,7 +14,7 @@ class ItemSpec: QuickSpec {
                     expect(pizza.name).to(match("pizza"))
                     expect(pizza.priceInCents).to(equal(599))
                 }
-                
+
                 it("sets name to 'coffee' and priceInCents to 317") {
                     let coffee = Item(name: "coffee", priceInCents: 317)
                     
